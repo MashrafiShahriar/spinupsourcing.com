@@ -1,9 +1,9 @@
 export default function Footer() {
     return (
       <footer className="bg-white text-gray-800 border-t border-gray-300 px-8 lg:px-24 py-16">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12">
           {/* Company Info */}
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <h4 className="text-lg font-semibold uppercase mb-4 tracking-wide">
               Spinup Sourcing
             </h4>
@@ -39,7 +39,7 @@ export default function Footer() {
           </div>
   
           {/* Contact */}
-          <div>
+          <div  className="col-span-2 md:col-span-1">
             <h4 className="text-sm font-semibold uppercase mb-4 tracking-wider border-b border-gray-200 pb-2">
               Contact
             </h4>

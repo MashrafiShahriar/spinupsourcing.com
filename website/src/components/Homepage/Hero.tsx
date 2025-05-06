@@ -27,11 +27,11 @@ export default function HeroSection() {
     {/* Content Overlay */}
     <div className="relative z-10 bg-black/60 text-white p-8 rounded-none backdrop-blur-sm max-w-4xl mx-4 transition-all hover:bg-black/70">
       <div className="text-center space-y-6">
-        <h2 className="text-5xl font-bold mb-4 leading-tight">
+        <h2 className="text-xl md:text-5xl font-bold mb-4 leading-tight">
           Connecting Global Supply Chains
-          <span className="block mt-4 text-3xl font-light">Across Continents & Markets</span>
+          <span className="block mt-4 text-base md:text-3xl font-light">Across Continents & Markets</span>
         </h2>
-        <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+        <p className="text-sm md:text-xl text-gray-200 max-w-2xl mx-auto">
           Pioneering digital transformation and sustainable solutions in global sourcing, 
           logistics, and supply chain management.
         </p>
