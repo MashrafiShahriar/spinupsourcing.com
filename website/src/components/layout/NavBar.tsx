@@ -160,19 +160,22 @@ const MegaMenu = () => {
                 LF Jeanswear
               </Link>
             </li>
-          </ul>
-        </div>
-  
-        {/* Add any other sections from your mega menu here */}
-        {['About us', 'News', 'Investors', 'Media', 'Suppliers', "Careers", "Contact us"].map((item, index) => (
-              <Link
+            {['About us', 'News', 'Investors', 'Media', 'Suppliers', "Careers", "Contact us"].map((item, index) => (
+             <li>
+                 <Link
                 key={index}
                 href="#"
                 className="text-gray-600 hover:text-black transition-all pb-1"
               >
                 {item}
               </Link>
+             </li>
             ))}
+          </ul>
+        </div>
+  
+        {/* Add any other sections from your mega menu here */}
+        
       </div>
     </div>
   );
