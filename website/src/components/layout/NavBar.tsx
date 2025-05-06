@@ -103,52 +103,77 @@ const MegaMenu = () => {
   // Mobile Menu Content (same as before)
   const mobileMenu = (
     <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg z-50">
-      <div className="p-4 grid grid-cols-2 gap-4">
+      <div className="p-4 space-y-6">
+        {/* ESG Strategy Section */}
         <div>
-          <h3 className="font-semibold text-lg mb-3">Products</h3>
+          <h3 className="font-semibold text-lg mb-3">ESG Strategy</h3>
           <ul className="space-y-2">
-            <li><Link href="/product/deploy" className="block">Colioe Deploy</Link></li>
-            <li><Link href="/product/mail" className="block">Colioe Mail</Link></li>
-            <li><Link href="/product/fluid" className="block">Fluid Platform</Link></li>
-            <li><Link href="/product/ssl" className="block">Sectigo SSL</Link></li>
+            <li>
+              <Link href="/strategy/protecting-our-planet" className="block text-gray-600 hover:text-black transition-colors">
+                Protecting our planet
+              </Link>
+            </li>
+            <li>
+              <Link href="/strategy/people-in-the-supply-chain" className="block text-gray-600 hover:text-black transition-colors">
+                People in the supply chain
+              </Link>
+            </li>
+            <li>
+              <Link href="/strategy/engaging-our-people-and-community" className="block text-gray-600 hover:text-black transition-colors">
+                Engaging our people and community
+              </Link>
+            </li>
+            <li>
+              <Link href="/strategy/a-responsible-citizen" className="block text-gray-600 hover:text-black transition-colors">
+                A responsible citizen
+              </Link>
+            </li>
+            <li>
+              <Link href="/strategy/whistleblowing-policy" className="block text-gray-600 hover:text-black transition-colors">
+                Whistleblowing policy
+              </Link>
+            </li>
+            <li>
+              <Link href="/strategy/esg-news" className="block text-gray-600 hover:text-black transition-colors">
+                ESG News
+              </Link>
+            </li>
           </ul>
         </div>
+  
+        {/* Supply Chain Innovation Section */}
         <div>
-          <h3 className="font-semibold text-lg mb-3">Solutions</h3>
+          <h3 className="font-semibold text-lg mb-3">Supply Chain Innovation</h3>
           <ul className="space-y-2">
-            <li><Link href="/solutions/hash-connect" className="block">Hash Connect</Link></li>
-            <li><Link href="/solutions/runway" className="block">Colioe Runway</Link></li>
-            <li><Link href="/solutions/enterprise" className="block">Colioe Enterprise</Link></li>
+            <li>
+              <Link href="/innovation/our-business" className="block text-gray-600 hover:text-black transition-colors">
+                Our business
+              </Link>
+            </li>
+            <li>
+              <Link href="/innovation/supply-chain-solutions" className="block text-gray-600 hover:text-black transition-colors">
+                Supply chain solutions
+              </Link>
+            </li>
+            <li>
+              <Link href="/innovation/lf-jeanswear" className="block text-gray-600 hover:text-black transition-colors">
+                LF Jeanswear
+              </Link>
+            </li>
           </ul>
         </div>
-        <div>
-          <h3 className="font-semibold text-lg mb-3">Resources</h3>
-          <ul className="space-y-2">
-            <li><Link href="/resources/docs" className="block">Documentation</Link></li>
-            <li><Link href="/resources/blog" className="block">Blog</Link></li>
-            <li><Link href="/resources/support" className="block">Support</Link></li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="font-semibold text-lg mb-3">Company</h3>
-          <ul className="space-y-2">
-            <li><Link href="/pricing" className="block">Pricing</Link></li>
-            <li><Link href="/customers" className="block">Customers</Link></li>
-            <li><Link href="/blog" className="block">Blog</Link></li>
-            <li><Link href="/about" className="block">About</Link></li>
-          </ul>
-        </div>
+  
+        {/* Add any other sections from your mega menu here */}
+        {['About us', 'News', 'Investors', 'Media', 'Suppliers', "Careers", "Contact us"].map((item, index) => (
+              <Link
+                key={index}
+                href="#"
+                className="text-gray-600 hover:text-black transition-all pb-1"
+              >
+                {item}
+              </Link>
+            ))}
       </div>
-      {!user && (
-        <div className="flex border-t border-gray-200">
-          <Link href="/login" className="w-1/2 text-center py-3 border-r border-gray-200">
-            Login
-          </Link>
-          <Link href="/signup" className="w-1/2 text-center py-3 bg-black text-white">
-            Get Started
-          </Link>
-        </div>
-      )}
     </div>
   );
 
