@@ -1,12 +1,15 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Footer() {
     return (
       <footer className="bg-white text-gray-800 border-t border-gray-300 px-8 lg:px-24 py-16">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="col-span-2 md:col-span-1">
-            <h4 className="text-lg font-semibold uppercase mb-4 tracking-wide">
-              Spinup Sourcing
-            </h4>
+              <Link href="/" className="flex items-center">
+                <Image src="/logo-full-chromo.png" alt="Logo" width={250} height={100} className='w-full mb-4' />
+            </Link>
             <p className="text-sm text-gray-600 leading-relaxed">
               Building the supply chain of the future. We connect brands and retailers with suppliers across the globe, delivering innovation and efficiency.
             </p>

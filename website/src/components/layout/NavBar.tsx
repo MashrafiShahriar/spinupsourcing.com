@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { ChevronDown, ShoppingCart, Menu, User, LogOut } from 'lucide-react';
 import Link from 'next/link';
-
+import Image from 'next/image';
 const MegaMenu = () => {
   const [langOpen, setLangOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -204,9 +204,7 @@ const MegaMenu = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Link href="/" className="flex items-center">
-              <div className="text-xl font-bold tracking-wide">
-                Spinup Sourcing
-              </div>
+                <Image src="/logo-full-chromo.png" alt="Logo" width={250} height={100} className='w-full' />
             </Link>
           </div>
 
