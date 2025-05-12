@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="col-span-2 md:col-span-1">
               <Link href="/" className="flex items-center">
-                <Image src="/logo-full-chromo.png" alt="Logo" width={250} height={100} className='w-full mb-4' />
+                <Image src="/logo-full-chromo.png" alt="Logo" width={250} height={100} className='p-4 pl-0 md:p-0 w-3/4 md:w-full mb-4' />
             </Link>
             <p className="text-sm text-gray-600 leading-relaxed">
               Building the supply chain of the future. We connect brands and retailers with suppliers across the globe, delivering innovation and efficiency.

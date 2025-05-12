@@ -204,7 +204,7 @@ const MegaMenu = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Link href="/" className="flex items-center">
-                <Image src="/logo-full-chromo.png" alt="Logo" width={250} height={100} className='w-full' />
+                <Image src="/logo-full-chromo.png" alt="Logo" width={250} height={100} className='p-4 mx-auto md:p-0 md:w-full' />
             </Link>
           </div>
 
