@@ -57,21 +57,7 @@ const MegaMenu = () => {
               Engaging our people and community
               </Link>
             </li>
-            <li>
-              <Link href="/strategy/a-responsible-citizen" className="text-gray-600 hover:text-black transition-colors">
-              A responsible citizen
-              </Link>
-            </li>
-            <li>
-              <Link href="/strategy/whistleblowing-policy" className="text-gray-600 hover:text-black transition-colors">
-              Whistleblowing policy
-              </Link>
-            </li>
-            <li>
-              <Link href="/strategy/esg-news" className="text-gray-600 hover:text-black transition-colors">
-              ESG News
-              </Link>
-            </li>
+         
             
           </ul>
         </div>
@@ -83,16 +69,7 @@ const MegaMenu = () => {
               Our business
               </Link>
             </li>
-            <li>
-              <Link href="/innovation/supply-chain-solutions" className="text-gray-600 hover:text-black transition-colors">
-              Supply chain solutions
-              </Link>
-            </li>
-            <li>
-              <Link href="/innovation/lf-jeanswear" className="text-gray-600 hover:text-black transition-colors">
-              LF Jeanswear
-              </Link>
-            </li>
+      
           </ul>
         </div>
 
@@ -160,7 +137,7 @@ const MegaMenu = () => {
                 LF Jeanswear
               </Link>
             </li>
-            {['About us', 'News', 'Investors', 'Media', 'Suppliers', "Careers", "Contact us"].map((item, index) => (
+            {['About us', 'News', 'Media', 'Suppliers', "Careers", "Contact us"].map((item, index) => (
              <li>
                  <Link
                 key={index}
@@ -229,10 +206,10 @@ const MegaMenu = () => {
             </div>
 
             {/* Other Menu Items */}
-            {['About us', 'News', 'Investors', 'Media', 'Suppliers', "Careers", "Contact us"].map((item, index) => (
+            {['About us', 'News', 'Media', 'Suppliers', "Careers", "Contact us"].map((item, index) => (
               <Link
                 key={index}
-                href="#"
+                href={`/${item.toLowerCase().replace(/\s+/g, '-')}`}
                 className="text-gray-600 hover:text-black transition-all pb-1"
               >
                 {item}
