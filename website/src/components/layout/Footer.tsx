@@ -47,10 +47,10 @@ export default function Footer() {
               Contact
             </h4>
             <ul className="space-y-2 text-sm text-gray-700">
-              <li>540 Madison Ave, 29th Floor</li>
-              <li>New York, NY 10022</li>
-              <li>Email: contact@spinupsourcing.com</li>
-              <li>Phone: +1 (212) 555-1234</li>
+              <li>Mohakhali DOHS</li>
+              <li>Dhaka-1205, Bangladesh</li>
+              <li>Email: info@spinupsourcing.com</li>
+              <li>Phone: +880 1725-502388</li>
             </ul>
           </div>
         </div>

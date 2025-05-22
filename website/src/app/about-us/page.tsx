@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function About() {
   const stats = [
-    { value: "12+", label: "Years in Business" },
-    { value: "150+", label: "Team Members" },
-    { value: "40+", label: "Countries Served" },
+    { value: "12+", label: "Years of Experience" },
+    { value: "15+", label: "Core Team Members" },
+    { value: "13+", label: "Countries Served" },
     { value: "100%", label: "Client Satisfaction" }
   ];
 
@@ -48,7 +48,7 @@ export default function About() {
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Story</h1>
             <p className="text-xl md:text-2xl leading-relaxed mb-8">
-              Pioneering sustainable solutions since 2012, we're committed to building a better future through innovation and responsible business practices.
+              Pioneering sustainable solutions since 2025, we're committed to building a better future through innovation and responsible business practices.
             </p>
             <button className="flex items-center px-6 py-3 bg-white text-emerald-600 rounded-lg font-medium hover:bg-gray-100 transition-colors">
               Our Mission & Vision
@@ -66,7 +66,7 @@ export default function About() {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Who We Are</h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Founded in 2012, we began as a small team of environmental engineers with a shared vision. Today, we've grown into a global leader in sustainable technology solutions, serving clients across six continents.
+                Founded in 2025, we began as a small team of environmental engineers with a shared vision. Today, we've grown into a global leader in sustainable technology solutions, serving clients across six continents.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Our journey has been marked by continuous innovation, strategic partnerships, and an unwavering commitment to our core values. We measure our success not just by profits, but by the positive impact we create.
@@ -78,7 +78,7 @@ export default function About() {
             </div>
             <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg">
               <Image 
-                src="/about/office.jpg" 
+                src="/about/01.jpg" 
                 alt="Our headquarters" 
                 fill
                 className="object-cover"
@@ -113,25 +113,25 @@ export default function About() {
           </div>
 
           {/* Team */}
-          <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Meet Our Leadership</h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              {team.map((member, index) => (
-                <div key={index} className="group text-center">
-                  <div className="relative aspect-square rounded-xl overflow-hidden mb-4">
-                    <Image 
-                      src={member.image} 
-                      alt={member.name} 
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
+            {/* <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Meet Our Leadership</h2>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                {team.map((member, index) => (
+                  <div key={index} className="group text-center">
+                    <div className="relative aspect-square rounded-xl overflow-hidden mb-4">
+                      <Image 
+                        src={member.image} 
+                        alt={member.name} 
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900">{member.name}</h3>
+                    <p className="text-emerald-600">{member.role}</p>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900">{member.name}</h3>
-                  <p className="text-emerald-600">{member.role}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+                ))}
+              </div>
+            </div> */}
         </div>
       </section>
 

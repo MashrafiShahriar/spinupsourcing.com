@@ -137,7 +137,7 @@ const MegaMenu = () => {
                 LF Jeanswear
               </Link>
             </li>
-            {['About us', 'News', 'Media', 'Suppliers', "Careers", "Contact us"].map((item, index) => (
+            {['About us',  'Media', 'Buyers', "Careers", "Contact us"].map((item, index) => (
              <li>
                  <Link
                 key={index}
@@ -206,7 +206,7 @@ const MegaMenu = () => {
             </div>
 
             {/* Other Menu Items */}
-            {['About us', 'News', 'Media', 'Suppliers', "Careers", "Contact us"].map((item, index) => (
+            {['About us',  'Media', 'Buyers', "Careers", "Contact us"].map((item, index) => (
               <Link
                 key={index}
                 href={`/${item.toLowerCase().replace(/\s+/g, '-')}`}

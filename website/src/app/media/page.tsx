@@ -36,14 +36,14 @@ export default function Gallery() {
           {/* Media Content Blocks - Improved grid */}
           <div className="md:col-span-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[...Array(9)].map((_, index) => (
+              {[...Array(5)].map((_, index) => (
                 <div 
                   key={index} 
                   className="group relative overflow-hidden rounded-xl shadow-sm hover:shadow-md transition-all duration-300"
                 >
                   <div className="aspect-square bg-gray-100 flex items-center justify-center">
                     <Image 
-                      src={`/images/media-${index + 1}.png`} 
+                      src={`/images/media-${index}.jpg`} 
                       alt={`Media ${index + 1}`} 
                       width={400}
                       height={400}
